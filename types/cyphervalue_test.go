@@ -5,9 +5,9 @@ import (
 	"log"
 	"testing"
 
+	_ "github.com/johnnadratowski/cq"
+	"github.com/johnnadratowski/cq/types"
 	. "gopkg.in/check.v1"
-	_ "gopkg.in/cq.v1"
-	"gopkg.in/cq.v1/types"
 )
 
 type TypesSuite struct{}
