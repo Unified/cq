@@ -166,7 +166,7 @@ func getNeoData(url string) (*neo4jData, error) {
 
 	if res.StatusCode != 200 {
 		buf := new(bytes.Buffer)
-    buf.ReadFrom(res.Body)
+		buf.ReadFrom(res.Body)
 		Log.Printf("A non-ok response occurred getting Neo4j Data %s: %s", url, buf.String())
 		return nil, errors.New(buf.String())
 	}
